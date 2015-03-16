@@ -1,1 +1,1 @@
-# AGS-iOS-Core
+# AGSCore

@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FD31A3B19987E1A00F25F4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD31A3A19987E1A00F25F4D /* Foundation.framework */; };
+		2FD31A3D19987E1A00F25F4D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD31A3C19987E1A00F25F4D /* CoreGraphics.framework */; };
+		2FD31A3F19987E1A00F25F4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FD31A3E19987E1A00F25F4D /* UIKit.framework */; };
+		2FD31A4519987E1A00F25F4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2FD31A4319987E1A00F25F4D /* InfoPlist.strings */; };
+		2FD31A4719987E1A00F25F4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD31A4619987E1A00F25F4D /* main.m */; };
+		2FD31A4B19987E1A00F25F4D /* AGSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FD31A4A19987E1A00F25F4D /* AGSAppDelegate.m */; };
+		2FD31A4D19987E1A00F25F4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD31A4C19987E1A00F25F4D /* Images.xcassets */; };
+		6B3F77F41AB6E41B00C2BA1B /* AGSBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3F77EA1AB6E41B00C2BA1B /* AGSBaseService.m */; };
+		6B3F77F51AB6E41B00C2BA1B /* HttpResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3F77ED1AB6E41B00C2BA1B /* HttpResult.m */; };
+		6B3F77F61AB6E41B00C2BA1B /* JsonSerializable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3F77EF1AB6E41B00C2BA1B /* JsonSerializable.m */; };
+		6B3F77F71AB6E41B00C2BA1B /* MultiPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3F77F11AB6E41B00C2BA1B /* MultiPart.m */; };
+		6B3F77F81AB6E41B00C2BA1B /* RequestInvoker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3F77F31AB6E41B00C2BA1B /* RequestInvoker.m */; };
+		AF236DB4D86248129158F7D1 /* libPods-AGSCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F2E0DD40E24B0DBFDAE3BF /* libPods-AGSCore.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2FD31A3719987E1A00F25F4D /* AGSCore-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AGSCore-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD31A3A19987E1A00F25F4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2FD31A3C19987E1A00F25F4D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2FD31A3E19987E1A00F25F4D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2FD31A4219987E1A00F25F4D /* AGSCore-Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AGSCore-Demo-Info.plist"; sourceTree = "<group>"; };
+		2FD31A4419987E1A00F25F4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2FD31A4619987E1A00F25F4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2FD31A4819987E1A00F25F4D /* AGSCore-Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AGSCore-Demo-Prefix.pch"; sourceTree = "<group>"; };
+		2FD31A4919987E1A00F25F4D /* AGSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGSAppDelegate.h; sourceTree = "<group>"; };
+		2FD31A4A19987E1A00F25F4D /* AGSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGSAppDelegate.m; sourceTree = "<group>"; };
+		2FD31A4C19987E1A00F25F4D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AGSCore/Images.xcassets; sourceTree = "<group>"; };
+		2FD31A5319987E1A00F25F4D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2FD31A5B19987E1A00F25F4D /* AGSCoreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AGSCoreTests-Info.plist"; sourceTree = "<group>"; };
+		2FD31A5D19987E1A00F25F4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2FD31A5F19987E1A00F25F4D /* AGSCoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGSCoreTests.m; sourceTree = "<group>"; };
+		6B3F77E51AB6E41B00C2BA1B /* Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.h; sourceTree = "<group>"; };
+		6B3F77E61AB6E41B00C2BA1B /* WebAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebAPI.h; sourceTree = "<group>"; };
+		6B3F77E91AB6E41B00C2BA1B /* AGSBaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGSBaseService.h; sourceTree = "<group>"; };
+		6B3F77EA1AB6E41B00C2BA1B /* AGSBaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGSBaseService.m; sourceTree = "<group>"; };
+		6B3F77EC1AB6E41B00C2BA1B /* HttpResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpResult.h; sourceTree = "<group>"; };
+		6B3F77ED1AB6E41B00C2BA1B /* HttpResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpResult.m; sourceTree = "<group>"; };
+		6B3F77EE1AB6E41B00C2BA1B /* JsonSerializable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonSerializable.h; sourceTree = "<group>"; };
+		6B3F77EF1AB6E41B00C2BA1B /* JsonSerializable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonSerializable.m; sourceTree = "<group>"; };
+		6B3F77F01AB6E41B00C2BA1B /* MultiPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiPart.h; sourceTree = "<group>"; };
+		6B3F77F11AB6E41B00C2BA1B /* MultiPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiPart.m; sourceTree = "<group>"; };
+		6B3F77F21AB6E41B00C2BA1B /* RequestInvoker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestInvoker.h; sourceTree = "<group>"; };
+		6B3F77F31AB6E41B00C2BA1B /* RequestInvoker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestInvoker.m; sourceTree = "<group>"; };
+		71976807550BEC4A490DAB8D /* Pods-AGSCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGSCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AGSCore/Pods-AGSCore.debug.xcconfig"; sourceTree = "<group>"; };
+		8D975BBAE7F76EC9D4DA8B86 /* Pods-AGSCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGSCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-AGSCore/Pods-AGSCore.release.xcconfig"; sourceTree = "<group>"; };
+		91F2E0DD40E24B0DBFDAE3BF /* libPods-AGSCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AGSCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FD31A3419987E1A00F25F4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD31A3D19987E1A00F25F4D /* CoreGraphics.framework in Frameworks */,
+				2FD31A3F19987E1A00F25F4D /* UIKit.framework in Frameworks */,
+				2FD31A3B19987E1A00F25F4D /* Foundation.framework in Frameworks */,
+				AF236DB4D86248129158F7D1 /* libPods-AGSCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FD61F2ECB2B0948AC29CF8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71976807550BEC4A490DAB8D /* Pods-AGSCore.debug.xcconfig */,
+				8D975BBAE7F76EC9D4DA8B86 /* Pods-AGSCore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2F1CBFE519C9930B00BEFFDB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2F1CBFE619C9930B00BEFFDB /* Categories */,
+				2F1CBFE719C9930B00BEFFDB /* Helpers */,
+			);
+			name = Services;
+			path = Core/Services;
+			sourceTree = "<group>";
+		};
+		2F1CBFE619C9930B00BEFFDB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		2F1CBFE719C9930B00BEFFDB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2F1CBFE819C9930B00BEFFDB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2F1CBFE919C9930B00BEFFDB /* Categories */,
+				2F1CBFEA19C9930B00BEFFDB /* Helpers */,
+			);
+			name = UI;
+			path = Core/UI;
+			sourceTree = "<group>";
+		};
+		2F1CBFE919C9930B00BEFFDB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		2F1CBFEA19C9930B00BEFFDB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2FD31A2E19987E1A00F25F4D = {
+			isa = PBXGroup;
+			children = (
+				2FD31A4019987E1A00F25F4D /* AGSCore */,
+				2FD31A6A19987E2A00F25F4D /* Others */,
+				0FD61F2ECB2B0948AC29CF8D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2FD31A3819987E1A00F25F4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FD31A3719987E1A00F25F4D /* AGSCore-Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FD31A3919987E1A00F25F4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FD31A3A19987E1A00F25F4D /* Foundation.framework */,
+				2FD31A3C19987E1A00F25F4D /* CoreGraphics.framework */,
+				2FD31A3E19987E1A00F25F4D /* UIKit.framework */,
+				2FD31A5319987E1A00F25F4D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FD31A4019987E1A00F25F4D /* AGSCore */ = {
+			isa = PBXGroup;
+			children = (
+				6B3F77E31AB6E41B00C2BA1B /* AGS-iOS-Core */,
+				2FD31A6919987E2000F25F4D /* AppDelegate */,
+				2F1CBFE519C9930B00BEFFDB /* Services */,
+				2F1CBFE819C9930B00BEFFDB /* UI */,
+			);
+			path = AGSCore;
+			sourceTree = "<group>";
+		};
+		2FD31A4119987E1A00F25F4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FD31A4219987E1A00F25F4D /* AGSCore-Demo-Info.plist */,
+				2FD31A4319987E1A00F25F4D /* InfoPlist.strings */,
+				2FD31A4619987E1A00F25F4D /* main.m */,
+				2FD31A4819987E1A00F25F4D /* AGSCore-Demo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = AGSCore;
+			sourceTree = "<group>";
+		};
+		2FD31A5919987E1A00F25F4D /* AGSCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FD31A5F19987E1A00F25F4D /* AGSCoreTests.m */,
+				2FD31A5A19987E1A00F25F4D /* Supporting Files */,
+			);
+			path = AGSCoreTests;
+			sourceTree = "<group>";
+		};
+		2FD31A5A19987E1A00F25F4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FD31A5B19987E1A00F25F4D /* AGSCoreTests-Info.plist */,
+				2FD31A5C19987E1A00F25F4D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2FD31A6919987E2000F25F4D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2FD31A4919987E1A00F25F4D /* AGSAppDelegate.h */,
+				2FD31A4A19987E1A00F25F4D /* AGSAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2FD31A6A19987E2A00F25F4D /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				2FD31A4119987E1A00F25F4D /* Supporting Files */,
+				A8AB2F75414A4E2FA76EEBF9 /* Frameworks */,
+				2FD31A4C19987E1A00F25F4D /* Images.xcassets */,
+				2FD31A5919987E1A00F25F4D /* AGSCoreTests */,
+				2FD31A3919987E1A00F25F4D /* Frameworks */,
+				2FD31A3819987E1A00F25F4D /* Products */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		6B3F77E31AB6E41B00C2BA1B /* AGS-iOS-Core */ = {
+			isa = PBXGroup;
+			children = (
+				6B3F77E41AB6E41B00C2BA1B /* Prefix */,
+				6B3F77E71AB6E41B00C2BA1B /* Services */,
+			);
+			path = "AGS-iOS-Core";
+			sourceTree = SOURCE_ROOT;
+		};
+		6B3F77E41AB6E41B00C2BA1B /* Prefix */ = {
+			isa = PBXGroup;
+			children = (
+				6B3F77E51AB6E41B00C2BA1B /* Prefix.h */,
+				6B3F77E61AB6E41B00C2BA1B /* WebAPI.h */,
+			);
+			path = Prefix;
+			sourceTree = "<group>";
+		};
+		6B3F77E71AB6E41B00C2BA1B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6B3F77E81AB6E41B00C2BA1B /* Base Service */,
+				6B3F77EB1AB6E41B00C2BA1B /* WebAPI */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6B3F77E81AB6E41B00C2BA1B /* Base Service */ = {
+			isa = PBXGroup;
+			children = (
+				6B3F77E91AB6E41B00C2BA1B /* AGSBaseService.h */,
+				6B3F77EA1AB6E41B00C2BA1B /* AGSBaseService.m */,
+			);
+			path = "Base Service";
+			sourceTree = "<group>";
+		};
+		6B3F77EB1AB6E41B00C2BA1B /* WebAPI */ = {
+			isa = PBXGroup;
+			children = (
+				6B3F77EC1AB6E41B00C2BA1B /* HttpResult.h */,
+				6B3F77ED1AB6E41B00C2BA1B /* HttpResult.m */,
+				6B3F77EE1AB6E41B00C2BA1B /* JsonSerializable.h */,
+				6B3F77EF1AB6E41B00C2BA1B /* JsonSerializable.m */,
+				6B3F77F01AB6E41B00C2BA1B /* MultiPart.h */,
+				6B3F77F11AB6E41B00C2BA1B /* MultiPart.m */,
+				6B3F77F21AB6E41B00C2BA1B /* RequestInvoker.h */,
+				6B3F77F31AB6E41B00C2BA1B /* RequestInvoker.m */,
+			);
+			path = WebAPI;
+			sourceTree = "<group>";
+		};
+		A8AB2F75414A4E2FA76EEBF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91F2E0DD40E24B0DBFDAE3BF /* libPods-AGSCore.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FD31A3619987E1A00F25F4D /* AGSCore-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FD31A6319987E1A00F25F4D /* Build configuration list for PBXNativeTarget "AGSCore-Demo" */;
+			buildPhases = (
+				A270980114A04D7AB4B49A61 /* Check Pods Manifest.lock */,
+				2FD31A3319987E1A00F25F4D /* Sources */,
+				2FD31A3419987E1A00F25F4D /* Frameworks */,
+				2FD31A3519987E1A00F25F4D /* Resources */,
+				0D557555BCCF4BD2A044ED31 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AGSCore-Demo";
+			productName = AGSCore;
+			productReference = 2FD31A3719987E1A00F25F4D /* AGSCore-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FD31A2F19987E1A00F25F4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AGS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Agilsun Co., Ltd";
+			};
+			buildConfigurationList = 2FD31A3219987E1A00F25F4D /* Build configuration list for PBXProject "AGSCore-Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2FD31A2E19987E1A00F25F4D;
+			productRefGroup = 2FD31A3819987E1A00F25F4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2FD31A3619987E1A00F25F4D /* AGSCore-Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FD31A3519987E1A00F25F4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD31A4519987E1A00F25F4D /* InfoPlist.strings in Resources */,
+				2FD31A4D19987E1A00F25F4D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D557555BCCF4BD2A044ED31 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AGSCore/Pods-AGSCore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A270980114A04D7AB4B49A61 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FD31A3319987E1A00F25F4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FD31A4B19987E1A00F25F4D /* AGSAppDelegate.m in Sources */,
+				2FD31A4719987E1A00F25F4D /* main.m in Sources */,
+				6B3F77F81AB6E41B00C2BA1B /* RequestInvoker.m in Sources */,
+				6B3F77F61AB6E41B00C2BA1B /* JsonSerializable.m in Sources */,
+				6B3F77F51AB6E41B00C2BA1B /* HttpResult.m in Sources */,
+				6B3F77F71AB6E41B00C2BA1B /* MultiPart.m in Sources */,
+				6B3F77F41AB6E41B00C2BA1B /* AGSBaseService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2FD31A4319987E1A00F25F4D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD31A4419987E1A00F25F4D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2FD31A5C19987E1A00F25F4D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FD31A5D19987E1A00F25F4D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FD31A6119987E1A00F25F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FD31A6219987E1A00F25F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FD31A6419987E1A00F25F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71976807550BEC4A490DAB8D /* Pods-AGSCore.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AGSCore/AGSCore-Demo-Prefix.pch";
+				INFOPLIST_FILE = "AGSCore/AGSCore-Demo-Info.plist";
+				PRODUCT_NAME = "AGSCore-Demo";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2FD31A6519987E1A00F25F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D975BBAE7F76EC9D4DA8B86 /* Pods-AGSCore.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AGSCore/AGSCore-Demo-Prefix.pch";
+				INFOPLIST_FILE = "AGSCore/AGSCore-Demo-Info.plist";
+				PRODUCT_NAME = "AGSCore-Demo";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FD31A3219987E1A00F25F4D /* Build configuration list for PBXProject "AGSCore-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FD31A6119987E1A00F25F4D /* Debug */,
+				2FD31A6219987E1A00F25F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FD31A6319987E1A00F25F4D /* Build configuration list for PBXNativeTarget "AGSCore-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FD31A6419987E1A00F25F4D /* Debug */,
+				2FD31A6519987E1A00F25F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FD31A2F19987E1A00F25F4D /* Project object */;
+}

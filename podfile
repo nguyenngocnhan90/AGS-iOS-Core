@@ -1,0 +1,8 @@
+platform :ios, '7.0'
+
+target :AGSCore, :exclusive => true do
+
+    pod 'AFNetworking'
+    pod 'JSONModel'
+
+end

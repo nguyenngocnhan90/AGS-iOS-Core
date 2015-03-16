@@ -19,6 +19,7 @@
 		6B3F77F61AB6E41B00C2BA1B /* JsonSerializable.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3F77EF1AB6E41B00C2BA1B /* JsonSerializable.m */; };
 		6B3F77F71AB6E41B00C2BA1B /* MultiPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3F77F11AB6E41B00C2BA1B /* MultiPart.m */; };
 		6B3F77F81AB6E41B00C2BA1B /* RequestInvoker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B3F77F31AB6E41B00C2BA1B /* RequestInvoker.m */; };
+		6B3F77FC1AB6E90600C2BA1B /* AGS-iOS-Core.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6B3F77FB1AB6E90600C2BA1B /* AGS-iOS-Core.podspec */; };
 		AF236DB4D86248129158F7D1 /* libPods-AGSCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F2E0DD40E24B0DBFDAE3BF /* libPods-AGSCore.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		6B3F77F11AB6E41B00C2BA1B /* MultiPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiPart.m; sourceTree = "<group>"; };
 		6B3F77F21AB6E41B00C2BA1B /* RequestInvoker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestInvoker.h; sourceTree = "<group>"; };
 		6B3F77F31AB6E41B00C2BA1B /* RequestInvoker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestInvoker.m; sourceTree = "<group>"; };
+		6B3F77FB1AB6E90600C2BA1B /* AGS-iOS-Core.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "AGS-iOS-Core.podspec"; sourceTree = SOURCE_ROOT; };
 		71976807550BEC4A490DAB8D /* Pods-AGSCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGSCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AGSCore/Pods-AGSCore.debug.xcconfig"; sourceTree = "<group>"; };
 		8D975BBAE7F76EC9D4DA8B86 /* Pods-AGSCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGSCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-AGSCore/Pods-AGSCore.release.xcconfig"; sourceTree = "<group>"; };
 		91F2E0DD40E24B0DBFDAE3BF /* libPods-AGSCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AGSCore.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +160,7 @@
 		2FD31A4019987E1A00F25F4D /* AGSCore */ = {
 			isa = PBXGroup;
 			children = (
+				6B3F77FB1AB6E90600C2BA1B /* AGS-iOS-Core.podspec */,
 				6B3F77E31AB6E41B00C2BA1B /* AGS-iOS-Core */,
 				2FD31A6919987E2000F25F4D /* AppDelegate */,
 				2F1CBFE519C9930B00BEFFDB /* Services */,
@@ -331,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B3F77FC1AB6E90600C2BA1B /* AGS-iOS-Core.podspec in Resources */,
 				2FD31A4519987E1A00F25F4D /* InfoPlist.strings in Resources */,
 				2FD31A4D19987E1A00F25F4D /* Images.xcassets in Resources */,
 			);
